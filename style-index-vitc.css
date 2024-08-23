@@ -1,0 +1,91 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+body {
+    background-image: url('imagesVITC/Home-backgroud-img.jpeg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-attachment: fixed; /* Keep the background fixed while scrolling */
+}
+
+/* Home Menu Bar */
+nav {
+    background-color: #001029;
+    padding: 10px 0;
+    text-align: center; /* Center-aligns the content */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Horizontally center-aligns the buttons */
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between buttons */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    font-weight: bold;
+    font-size: 24px;
+    display: inline-block;
+}
+
+/* Style for B-vit home button  */
+nav .home-button {
+    position: absolute; /* Position the home button absolutely within the nav */
+    top: 10px;
+    left: 150px;
+}
+
+nav .home-button img {
+    height: 40px;
+    vertical-align: middle;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Container for the images using Grid */
+.home-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Space between columns */
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* Style for the Home right image */
+.home-right-image {
+    display: flex;
+    justify-content: center; /* Center-align the image horizontally within its cell */
+    align-items: center; /* Center-align the image vertically within its cell */
+}
+
+/* Style for the docs Intro text */
+.VITC-Intro {
+    font-family: 'Source Code Pro', monospace; /* Use Source Code Pro font */
+    font-size: 24px; /* Font size */
+    color: white;
+    margin-top: 10px; /* Space between image and text */
+    margin-left: -30px; /* Adjust this value to move text left */
+    text-align: center; /* Center-align text */
+    font-weight: 900
+}
+

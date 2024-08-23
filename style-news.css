@@ -1,0 +1,81 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+
+/* Home Menu Bar */
+nav {
+    background-color: #001029;
+    padding:10px 0;
+    text-align: center; /* Center-aligns the content */
+    margin: 0; /* Ensure no margin on nav */
+    position: relative; /* For positioning the home button */
+    height: 64px; /* Set a height for the navigation bar */
+}
+
+/* Reset body margin and padding */
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    background-color: #001029;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Horizontally center-aligns the buttons */
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between buttons */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    font-weight: bold;
+    font-size: 24px;
+    display: inline-block;
+}
+
+/* Style for Home button */
+nav .home-button {
+    position: absolute;
+    top: 10px;
+    left: 150px;
+}
+
+nav .home-button img {
+    height: 40px;
+    vertical-align: middle;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.image-container img {
+    width: 900px;
+    height: 900px;
+    object-fit: cover;
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
